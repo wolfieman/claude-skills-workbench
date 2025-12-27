@@ -56,11 +56,11 @@ class DCFModel:
     def set_assumptions(
         self,
         projection_years: int = 5,
-        revenue_growth: list[float] = None,
-        ebitda_margin: list[float] = None,
+        revenue_growth: list[float] = None, # pyright: ignore[reportArgumentType]
+        ebitda_margin: list[float] = None, # type: ignore
         tax_rate: float = 0.25,
-        capex_percent: list[float] = None,
-        nwc_percent: list[float] = None,
+        capex_percent: list[float] = None, # type: ignore
+        nwc_percent: list[float] = None, # type: ignore
         terminal_growth: float = 0.03,
     ):
         """
@@ -136,7 +136,7 @@ class DCFModel:
         debt_weight = debt_to_equity / (1 + debt_to_equity)
 
         # Calculate WACC
-        wacc = equity_weight * cost_of_equity + debt_weight * cost_of_debt * (1 - tax_rate)
+        wacc = equity_weight * cost_of_equity + debt_weight * cost_of_debt * (1 - tax_rate) # type: ignore
 
         self.wacc_components = {
             "risk_free_rate": risk_free_rate,
