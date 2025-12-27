@@ -1,8 +1,7 @@
-# Copyright (C) 2025 Wolfie
-# This program is free software: you can redistribute it and/or modify
-# it under the terms of the GNU General Public License as published by
-# the Free Software Foundation, either version 3 of the License, or
-# (at your option) any later version.
+# Required Notice:
+# Copyright © 2025 Wolfie
+# Licensed under the Polyform Noncommercial License 1.0.0
+# https://polyformproject.org/licenses/noncommercial/1.0.0
 
 import anthropic
 
