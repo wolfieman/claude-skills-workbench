@@ -16,3 +16,6 @@ Thumbs.db
 
 # Claude / local tooling
 .claude/cache/
+
+# Claude local settings (contains secrets)
+.claude/settings.local.json
